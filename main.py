@@ -4,7 +4,7 @@ import PyPDF2
 with open('codingacademy.pdf', 'rb') as book:
     reader = PyPDF2.PdfFileReader(book)
     audio_reader =pyttsx3.init()
-    audio_reader.setProperty("rate", 170)
+    audio_reader.setProperty("rate", 160)
 
     for page in range(reader.numPages):
         next_page = reader.getPage(page)
